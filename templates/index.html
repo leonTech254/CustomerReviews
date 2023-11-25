@@ -4,19 +4,57 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Customer Reviews</title>
-    <link rel="stylesheet" href="{{url_for('static',filename='css/style.css')}}">
+    <!-- <link rel="stylesheet" href="{{url_for('static',filename='css/style.css')}}"> -->
+    <link rel="stylesheet" href="../static/css/style.css">
 </head>
 <body>
     <div class="nav_wrappper">
         <nav>
             <ul>
-                <li>Home</li>
-                <li>About</li>
+                <li><a href="">Home</a></li>
+                <li><a href="">About</a></li>
             </ul>
         </nav>
+
+        <div class="welcome_container">
+            <div class="welcome_msg">
+                <h1>Welcome to CR with <span class="aI">AI</span></h1>
+                <p>Customer Review utilizes machine learning models to categorize customer reviews into either positive or negative sentiments. Our system employs the Naive Bayes classifier to analyze and understand customer feedback, providing valuable insights for improved customer experiences.</p>
+                <button class="read_more_btn">Read More</button>
+            </div>
+        </div>
         
+
+
+
     </div>
+
+ 
+    <div class="reviews_container">
+        <div class="review_title title">
+            <h1>PRODUCT REVIEW</h1>
+        </div>
+        <div class="productContainer product">
+            <div class="card">
+                <div class="product_image">
+                    <img src="../images/WhatsApp_icon.png" alt="">
+                </div>
+                <div class="product_details">
+                    <h2>WhatsApp</h2>
+                    <p>Welcome to our simulated review system on WhatsApp! Share your thoughts and opinions effortlessly with friends</p>
+                </div>
+                
     
-    
+            </div>
+        </div>
+        <div class="user_input input">
+            <div class="input_container">
+                <input type="text" placeholder="test your review">
+                <button>submit Review</button>
+            </div>
+        </div>
+
+
+    </div>
 </body>
 </html>
